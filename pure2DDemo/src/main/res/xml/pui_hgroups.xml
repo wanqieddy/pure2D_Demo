@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Group SYSTEM "../../pure2d-ui.dtd" >
+<Group
+    height="600"
+    width="600" >
+
+    <Sprite9
+        blendMode="premultiplied_alpha"
+        height="100%"
+        patches="20,20,20,20"
+        source="@drawable/panel_collection_reward"
+        touchable="true"
+        width="100%" />
+
+    <Sprite
+        blendMode="premultiplied_alpha"
+        centerX="0"
+        source="@drawable/pure2d_logo_64"
+        top="7%" />
+
+    <HGroup
+        align="center"
+        bottom="20%"
+        childrenGap="2%"
+        height="wrap_content"
+        left="5%"
+        reversed="true"
+        right="5%" >
+        <Sprite source="@drawable/cc_128" />
+        <Sprite source="@drawable/mw_128" />
+        <Sprite source="@drawable/ka_128" />
+    </HGroup>
+
+    <HScroll
+        bottom="50%"
+        childrenGap="2%"
+        clippingEnabled="true"
+        height="wrap_content"
+        left="5%"
+        right="5%"
+        snapEnabled="true" >
+        <Sprite source="@drawable/cc_128" />
+        <Sprite source="@drawable/mw_128" />
+        <Sprite source="@drawable/ka_128" />
+        <Sprite source="@drawable/cc_128" />
+        <Sprite source="@drawable/mw_128" />
+        <Sprite source="@drawable/ka_128" />
+        <Sprite source="@drawable/cc_128" />
+        <Sprite source="@drawable/mw_128" />
+        <Sprite source="@drawable/ka_128" />
+        <Sprite source="@drawable/cc_128" />
+        <Sprite source="@drawable/mw_128" />
+        <Sprite source="@drawable/ka_128" />
+    </HScroll>
+
+    <Button
+        bottom="5%"
+        centerX="0"
+        patches="20,20,0,0"
+        source="@drawable/btn_up"
+        width="30%" >
+        <Text
+            centerX="0"
+            centerY="0"
+            font="font2"
+            text="@string/okay" />
+    </Button>
+
+</Group>

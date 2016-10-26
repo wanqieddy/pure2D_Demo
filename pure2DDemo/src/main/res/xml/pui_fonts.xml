@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Group SYSTEM "../../pure2d-ui.dtd" >
+<Group
+    height="400"
+    width="600" >
+
+    <Sprite9
+        blendMode="premultiplied_alpha"
+        height="100%"
+        patches="20,20,20,20"
+        source="@drawable/panel_collection_reward"
+        width="100%" />
+
+    <Sprite
+        blendMode="premultiplied_alpha"
+        centerX="0"
+        source="@drawable/pure2d_logo_64"
+        top="7%" />
+
+    <VGroup
+        align="center"
+        centerY="0"
+        height="wrap_content"
+        reversed="true"
+        width="100%" >
+        <Text
+            centerX="0"
+            centerY="0"
+            font="font1"
+            text="@string/hello_text" />
+        <Text
+            centerX="0"
+            centerY="0"
+            font="font2"
+            text="Happy Friday!" />
+    </VGroup>
+
+    <Text
+        font="font2"
+        left="5%"
+        text="TL"
+        top="5%" />
+    <Text
+        font="font2"
+        right="5%"
+        text="TR"
+        top="5%" />
+    <Text
+        bottom="5%"
+        font="font2"
+        left="5%"
+        text="BL" />
+    <Text
+        bottom="5%"
+        font="font2"
+        right="5%"
+        text="BR" />
+
+</Group>

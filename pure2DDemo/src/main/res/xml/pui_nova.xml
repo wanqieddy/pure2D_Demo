@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Group SYSTEM "../../pure2d-ui.dtd" >
+<Group
+    height="600"
+    width="600" >
+
+    <Sprite9
+        blendMode="premultiplied_alpha"
+        height="100%"
+        patches="20,20,20,20"
+        source="@drawable/panel_collection_reward"
+        touchable="true"
+        width="100%" />
+
+    <Sprite
+        blendMode="premultiplied_alpha"
+        centerX="0"
+        source="@drawable/pure2d_logo_64"
+        top="7%" />
+
+    <NovaGroup
+        centerX="0"
+        centerY="0"
+        source="cache://nova/nova/luckyball_paris_t2.json" />
+    <!--
+    <NovaGroup
+        centerX="0"
+        centerY="0"
+        container="$SCENE"
+        param0="asset://atlas/coin_01_60.json"
+        paramNum="1"
+        source="cache://nova/nova/currency_drop.json" />
+    -->
+
+    <Button
+        bottom="5%"
+        centerX="0"
+        patches="20,20,0,0"
+        source="@drawable/btn_up"
+        width="30%" >
+        <Text
+            centerX="0"
+            centerY="0"
+            font="font2"
+            text="@string/okay" />
+    </Button>
+
+</Group>

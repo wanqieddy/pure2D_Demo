@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Group SYSTEM "../../pure2d-ui.dtd" >
+<Group
+    animator="ani_fade_in"
+    height="500"
+    width="600" >
+
+    <Sprite9
+        height="100%"
+        patches="20,20,20,20"
+        source="@drawable/panel_collection_reward"
+        touchable="true"
+        width="100%" />
+
+    <Sprite
+        animator="ani_heart_beat"
+        blendMode="premultiplied_alpha"
+        centerX="0"
+        originAtCenter="true"
+        source="@drawable/pure2d_logo_64"
+        top="15%" />
+    <Sprite
+        animator="ani_rotate"
+        centerX="0"
+        centerY="0"
+        originAtCenter="true"
+        source="@drawable/cc_128" />
+    <Sprite
+        animator="ani_rotate"
+        centerX="-200"
+        centerY="0"
+        originAtCenter="true"
+        source="@drawable/mw_128" />
+    <Sprite
+        animator="ani_rotate"
+        centerX="200"
+        centerY="0"
+        originAtCenter="true"
+        source="@drawable/ka_128" />
+
+    <Button
+        animator="ani_color"
+        bottom="5%"
+        centerX="0"
+        patches="20,20,0,0"
+        source="@drawable/btn_up"
+        width="30%" >
+        <Text
+            centerX="0"
+            centerY="0"
+            font="font2"
+            text="@string/okay" />
+    </Button>
+
+</Group>

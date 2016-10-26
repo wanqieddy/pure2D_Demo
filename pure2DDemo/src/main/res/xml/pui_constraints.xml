@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Group SYSTEM "../../pure2d-ui.dtd" >
+<Group
+    animator="ani_resize"
+    height="600"
+    width="600" >
+
+    <Sprite9
+        blendMode="premultiplied_alpha"
+        height="100%"
+        patches="20,20,20,20"
+        source="@drawable/panel_collection_reward"
+        touchable="true"
+        width="100%" />
+
+    <Sprite
+        blendMode="premultiplied_alpha"
+        centerX="0"
+        source="@drawable/pure2d_logo_64"
+        top="5%" />
+
+    <Group
+        bottom="10%"
+        left="10%"
+        right="10%"
+        top="25%" >
+        <Rect
+            height="100%"
+            width="100%"
+            color="#66FFFF00" />
+
+        <!-- center -->
+        <Rect
+            centerX="0"
+            centerY="0"
+            height="30"
+            width="30" />
+        <!-- top left -->
+        <Rect
+            height="30"
+            left="5%"
+            top="5%"
+            width="30" />
+        <!-- top right -->
+        <Rect
+            height="30"
+            right="5%"
+            top="5%"
+            width="30" />
+        <!-- bottom left -->
+        <Rect
+            bottom="5%"
+            height="30"
+            left="5%"
+            width="30" />
+        <!-- bottom right -->
+        <Rect
+            bottom="5%"
+            height="30"
+            right="5%"
+            width="30" />
+        <!-- bottom center -->
+        <Rect
+            bottom="5%"
+            centerX="0"
+            height="30"
+            width="30" />
+        <!-- left center -->
+        <Rect
+            centerY="0"
+            height="30"
+            left="5%"
+            width="30" />
+        <!-- top center -->
+        <Rect
+            centerX="0"
+            height="30"
+            top="5%"
+            width="30" />
+        <!-- center right -->
+        <Rect
+            centerY="0"
+            height="30"
+            right="5%"
+            width="30" />
+    </Group>
+
+</Group>

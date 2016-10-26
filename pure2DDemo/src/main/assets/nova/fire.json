@@ -1,0 +1,49 @@
+{
+	"version": 1,
+	"emitters": [
+		{
+			"name": "my_fire",
+			"width": 50,
+			"height": 50,
+			"lifespan": 6000,
+			"particles": [
+				{
+					"layer": 1,
+					"start_delay": 500,
+					"duration": 5000,
+
+					"sprite": "sprites/smoke.png",
+					"animator": "smoke_ani",
+					"blend_mode": "screen_alpha"
+				},
+				{
+					"duration": 5000,
+
+					"sprite": ["sprites/fire.png", "sprites/fire.png", "sprites/fire.png", "sprites/smoke.png"],
+					"animator": "fire_ani",
+					"blend_mode": "add"
+				}
+			]
+		}
+	],
+	
+	"animators": [
+		{
+			"name":"smoke_ani",
+			"type": "parallel",
+			"animators": [
+				{"type": "unstable_move", "dy": [300, 500], "duration": [500, 1000], "interpolation": "decelerate", "wind_x1":-5, "wind_x2":5, "segment_duration":[100, 200]},
+				{"type": "alpha", "from": 1, "to": 0, "duration": 700},
+				{"type": "scale", "x_from": 1.5, "y_from": 1.5, "x_to": 0.125, "y_to": 0.125, "duration": 700}
+			]
+		},
+		{
+			"name":"fire_ani",
+			"type": "parallel",
+			"animators": [
+				{"type": "unstable_move", "dy": [100, 500], "duration": [500, 1000], "interpolation": "decelerate", "wind_x1":-5, "wind_x2":5, "segment_duration":[100, 200]},
+				{"type": "scale", "x_from": 1, "y_from": 1, "x_to": 0.125, "y_to": 0.125, "duration": 1000}
+			]
+		}
+	]
+}

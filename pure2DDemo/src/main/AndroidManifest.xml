@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.longo.pure2D.demo"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.longo.pure2D.demo.Pure2DDemoApplication"
+        android:icon="@drawable/ic_launcher"
+        android:installLocation="preferExternal"
+        android:label="@string/app_name" >
+        <!--<service-->
+            <!--android:name="com.funzio.pure2D.demo.loaders.HelloLoaderService"-->
+            <!--android:exported="true"-->
+            <!--android:label="@string/app_name" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.longo.pure2D.demo.loaders.HelloLoaderService.INTENT_START" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+
+        <activity
+            android:name="com.funzio.pure2D.demo.activities.MainMenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" >
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.funzio.pure2D.demo.objects.LWFCharacterActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.funzio.pure2D.demo.objects.LWFCinematicActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

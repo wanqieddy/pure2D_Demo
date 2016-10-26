@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Group SYSTEM "../../pure2d-ui.dtd" >
+<Group
+    height="400"
+    width="600" >
+
+    <Sprite9
+        blendMode="premultiplied_alpha"
+        height="100%"
+        patches="20,20,20,20"
+        source="@drawable/panel_collection_reward"
+        touchable="true"
+        width="100%" />
+
+    <Sprite
+        blendMode="premultiplied_alpha"
+        centerX="0"
+        source="@drawable/pure2d_logo_64"
+        top="7%" />
+
+    <Clip
+        centerX="0"
+        centerY="0"
+        source="cache://animations/animations/chip_spin.json" />
+    <Clip
+        centerX="-200"
+        centerY="0"
+        source="asset://atlas/coin_01_60.json" />
+    <Clip
+        centerX="200"
+        centerY="0"
+        source="asset://atlas/star_03_60.json" />
+
+    <Button
+        bottom="5%"
+        centerX="0"
+        patches="20,20,0,0"
+        source="@drawable/btn_up"
+        width="30%" >
+        <Text
+            centerX="0"
+            centerY="0"
+            font="font2"
+            text="@string/okay" />
+    </Button>
+
+</Group>
